@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InitDatas>
+	<Modules>
+		<Module name="Personal Office" sn="personaloffice" url="" orderNum="10">
+			<Module name="My Office Desk" sn="myworkbeach" url="task.action?method=doesTask" orderNum="1010"/>
+			<Module name="My Note" sn="notepad" url="notepad.action" orderNum="1020"/>
+			<Module name="My Task" sn="mytask" url="user.action?method=mpInput" orderNum="1030"/>
+			<Module name="Address Book" sn="addresslist" url="addresslist.action" orderNum="1040"/>
+		</Module>	
+		<Module name="Official Document Manage" sn="doc" url="" orderNum="20">
+			<Module name="Official Document Maintain" sn="document" url="document.action" orderNum="2010"/>
+			<Module name="File Dispose" sn="arch" url="document.action?method=searchAllFinishedDocuments" orderNum="2020"/>
+		</Module>
+		<Module name="Public Info" sn="pubinfo" url="" orderNum="30">
+			<Module name="Info Manage" sn="infomgr" url="info.action" orderNum="3010"/>
+		</Module>
+		<Module name="Administration Work" sn="puboffice" url="" orderNum="40">
+			<Module name="Meeting Manage" sn="meeting" url="meeting.action" orderNum="4010"/>
+			<Module name="Property Manage" sn="asset" url="asset.action" orderNum="4020"/>
+			<Module name="Appliance Manage" sn="usething" url="usething.action" orderNum="4030"/>
+			<Module name="Auto Manage" sn="car" url="car.action" orderNum="4040"/>
+			<Module name="Books Manage" sn="book" url="book.action" orderNum="4050"/>
+		</Module>
+		<Module name="News Manage" sn="mail" url="" orderNum="50">
+			<Module name="Inbox" sn="inbox" url="message.action?method=inbox" orderNum="5010"/>
+			<Module name="Outbox" sn="outbox" url="message.action?method=outbox" orderNum="5020"/>
+			<Module name="Rubbish" sn="trash" url="message.action?method=trash" orderNum="5030"/>
+			<Module name="Chatting Records" sn="record" url="message.action?method=record" orderNum="5040"/>
+		</Module>		
+		<Module name="Work Flow" sn="workflow" url="" orderNum="60">
+			<Module name="Flow Manage" sn="flow" url="workflow.action" orderNum="6010"/>
+			<Module name="Form Definition" sn="formdef" url="formdef.action" orderNum="6020"/>
+		</Module>
+		<Module name="Oragization Manage" sn="orgmgr" url="" orderNum="70">
+			<Module name="Institution Manage" sn="org" url="org.action" orderNum="7010"/>
+			<Module name="Staff Manage" sn="person" url="person.action" orderNum="7020"/>
+		</Module>
+		<Module name="Authority Manage" sn="auth" url="" orderNum="80">
+			<Module name="Module Manage" sn="module" url="module.action" orderNum="8010"/>
+			<Module name="Role Manage" sn="role" url="role.action" orderNum="8020"/>
+			<Module name="User Manage" sn="user" url="user.action" orderNum="8030"/>
+		</Module>
+		<Module name="System Manage" sn="sytemmgr" url="" orderNum="90">
+			<Module name="Password Modify" sn="chgpsw" url="user.action?method=chgpsw" orderNum="9010"/>
+			<Module name="Code Definition" sn="codedef" url="codedef.action" orderNum="9020"/>
+			<Module name="System Initialization" sn="systeminit" url="systeminit.action" orderNum="9030"/>
+		</Module>
+		<Module name="Personnel Archives" sn="employee" url="" orderNum="100">
+			<Module name="Staff Resume" sn="employee1" url="employee.action" orderNum="10010"/>
+			<Module name="Regular Worker Application" sn="employee2" url="employee.action" orderNum="10020"/>
+			<Module name="Leave Application" sn="employee3" url="employee.action" orderNum="10030"/>
+			<Module name="Staff Check-in" sn="employee4" url="employee.action" orderNum="10040"/>
+		</Module>
+	</Modules>
+	<Roles>
+		<Role name="System manager">
+			<Acl module="Personal Office" C="true" R="true" U="true" D="true"/>
+			<Acl module="My Office Desk" C="true" R="true" U="true" D="true"/>
+			<Acl module="My Note" C="true" R="true" U="true" D="true"/>
+			<Acl module="My Task" C="true" R="true" U="true" D="true"/>
+			<Acl module="Address Book" C="true" R="true" U="true" D="true"/>
+			<Acl module="Official Document Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Official Document Maintain" C="true" R="true" U="true" D="true"/>
+			<Acl module="File Dispose" C="true" R="true" U="true" D="true"/>
+			<Acl module="Public Info" C="true" R="true" U="true" D="true"/>
+			<Acl module="Info Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Administration Work" C="true" R="true" U="true" D="true"/>
+			<Acl module="Meeting Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Property Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Appliance Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Auto Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Books Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="News Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Inbox" C="true" R="true" U="true" D="true"/>
+			<Acl module="Outbox" C="true" R="true" U="true" D="true"/>
+			<Acl module="Rubbish" C="true" R="true" U="true" D="true"/>
+			<Acl module="Chatting Records" C="true" R="true" U="true" D="true"/>
+			<Acl module="Work Flow" C="true" R="true" U="true" D="true"/>
+			<Acl module="Flow Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Form Definition" C="true" R="true" U="true" D="true"/>
+			<Acl module="Oragization Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Institution Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Staff Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Authority Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Module Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Role Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="User Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="System Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Password Modify" C="true" R="true" U="true" D="true"/>
+			<Acl module="Code Definition" C="true" R="true" U="true" D="true"/>
+			<Acl module="System Initialization" C="true" R="true" U="true" D="true"/>
+			<Acl module="Personnel Archives" C="true" R="true" U="true" D="true"/>
+			<Acl module="Staff Resume" C="true" R="true" U="true" D="true"/>
+			<Acl module="Regular Worker Application" C="true" R="true" U="true" D="true"/>
+			<Acl module="Leave Application" C="true" R="true" U="true" D="true"/>
+			<Acl module="Staff Check-in" C="true" R="true" U="true" D="true"/>
+		</Role>
+		<Role name="Common Staff">
+			<Acl module="Personal Office" C="true" R="true" U="true" D="true"/>
+			<Acl module="My Office Desk" C="true" R="true" U="true" D="true"/>
+			<Acl module="My Note" C="true" R="true" U="true" D="true"/>
+			<Acl module="My Task" C="true" R="true" U="true" D="true"/>
+			<Acl module="Address Book" C="true" R="true" U="true" D="true"/>
+			<Acl module="Official Document Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Official Document Maintain" C="true" R="true" U="true" D="true"/>
+			<Acl module="File Dispose" C="true" R="true" U="true" D="true"/>
+			<Acl module="Public Info" C="true" R="true" U="true" D="true"/>
+			<Acl module="Info Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Administration Work" C="true" R="true" U="true" D="true"/>
+			<Acl module="Meeting Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Property Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Appliance Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Auto Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Books Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="News Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Inbox" C="true" R="true" U="true" D="true"/>
+			<Acl module="Outbox" C="true" R="true" U="true" D="true"/>
+			<Acl module="Rubbish" C="true" R="true" U="true" D="true"/>
+			<Acl module="Chatting Records" C="true" R="true" U="true" D="true"/>
+		</Role>
+		<Role name="Department Manger">
+			<Acl module="Personal Office" C="true" R="true" U="true" D="true"/>
+			<Acl module="My Office Desk" C="true" R="true" U="true" D="true"/>
+			<Acl module="My Note" C="true" R="true" U="true" D="true"/>
+			<Acl module="My Task" C="true" R="true" U="true" D="true"/>
+			<Acl module="Address Book" C="true" R="true" U="true" D="true"/>
+			<Acl module="Official Document Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Official Document Maintain" C="true" R="true" U="true" D="true"/>
+			<Acl module="File Dispose" C="true" R="true" U="true" D="true"/>
+			<Acl module="Public Info" C="true" R="true" U="true" D="true"/>
+			<Acl module="Info Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Administration Work" C="true" R="true" U="true" D="true"/>
+			<Acl module="Meeting Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Property Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Appliance Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Auto Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Books Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="News Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Inbox" C="true" R="true" U="true" D="true"/>
+			<Acl module="Outbox" C="true" R="true" U="true" D="true"/>
+			<Acl module="Rubbish" C="true" R="true" U="true" D="true"/>
+			<Acl module="Chatting Records" C="true" R="true" U="true" D="true"/>
+			<Acl module="Work Flow" C="true" R="true" U="true" D="true"/>
+			<Acl module="Flow Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Form Definition" C="true" R="true" U="true" D="true"/>
+			<Acl module="Oragization Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Institution Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Staff Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Authority Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Module Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Role Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="User Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="System Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Password Modify" C="true" R="true" U="true" D="true"/>
+			<Acl module="Code Definition" C="true" R="true" U="true" D="true"/>
+			<Acl module="System Initialization" C="true" R="true" U="true" D="true"/>
+			<Acl module="Personnel Archives" C="true" R="true" U="true" D="true"/>
+			<Acl module="Staff Resume" C="true" R="true" U="true" D="true"/>
+			<Acl module="Regular Worker Application" C="true" R="true" U="true" D="true"/>
+			<Acl module="Leave Application" C="true" R="true" U="true" D="true"/>
+			<Acl module="Staff Check-in" C="true" R="true" U="true" D="true"/>
+		</Role>
+		<Role name="General Manager">
+			<Acl module="Personal Office" C="true" R="true" U="true" D="true"/>
+			<Acl module="My Office Desk" C="true" R="true" U="true" D="true"/>
+			<Acl module="My Note" C="true" R="true" U="true" D="true"/>
+			<Acl module="My Task" C="true" R="true" U="true" D="true"/>
+			<Acl module="Address Book" C="true" R="true" U="true" D="true"/>
+			<Acl module="Official Document Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Official Document Maintain" C="true" R="true" U="true" D="true"/>
+			<Acl module="File Dispose" C="true" R="true" U="true" D="true"/>
+			<Acl module="Public Info" C="true" R="true" U="true" D="true"/>
+			<Acl module="Info Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Administration Work" C="true" R="true" U="true" D="true"/>
+			<Acl module="Meeting Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Property Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Appliance Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Auto Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Books Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="News Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Inbox" C="true" R="true" U="true" D="true"/>
+			<Acl module="Outbox" C="true" R="true" U="true" D="true"/>
+			<Acl module="Rubbish" C="true" R="true" U="true" D="true"/>
+			<Acl module="Chatting Records" C="true" R="true" U="true" D="true"/>
+			<Acl module="Work Flow" C="true" R="true" U="true" D="true"/>
+			<Acl module="Flow Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Form Definition" C="true" R="true" U="true" D="true"/>
+			<Acl module="Oragization Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Institution Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Staff Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Authority Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Module Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Role Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="User Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="System Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Password Modify" C="true" R="true" U="true" D="true"/>
+			<Acl module="Code Definition" C="true" R="true" U="true" D="true"/>
+			<Acl module="System Initialization" C="true" R="true" U="true" D="true"/>
+			<Acl module="Personnel Archives" C="true" R="true" U="true" D="true"/>
+			<Acl module="Staff Resume" C="true" R="true" U="true" D="true"/>
+			<Acl module="Regular Worker Application" C="true" R="true" U="true" D="true"/>
+			<Acl module="Leave Application" C="true" R="true" U="true" D="true"/>
+			<Acl module="Staff Check-in" C="true" R="true" U="true" D="true"/>
+		</Role>
+		<Role name="Archives Manager">
+			<Acl module="Personal Office" C="true" R="true" U="true" D="true"/>
+			<Acl module="My Office Desk" C="true" R="true" U="true" D="true"/>
+			<Acl module="My Note" C="true" R="true" U="true" D="true"/>
+			<Acl module="My Task" C="true" R="true" U="true" D="true"/>
+			<Acl module="Address Book" C="true" R="true" U="true" D="true"/>
+			<Acl module="Official Document Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="File Dispose" C="true" R="true" U="true" D="true"/>
+			<Acl module="News Manage" C="true" R="true" U="true" D="true"/>
+			<Acl module="Inbox" C="true" R="true" U="true" D="true"/>
+			<Acl module="Outbox" C="true" R="true" U="true" D="true"/>
+			<Acl module="Rubbish" C="true" R="true" U="true" D="true"/>
+			<Acl module="Chatting Records" C="true" R="true" U="true" D="true"/>
+		</Role>
+	</Roles>
+	<Organizations>
+		<Org name="General Company">
+			<Org name="President's Office "/>
+			<Org name="Administrative Department"/>
+			<Org name="Financial Department"/>
+		</Org>
+		<Org name="Vaasa Branch Company">
+			<Person name="yang fan" username="yf" password="yf" roles="General Manager"/>
+			<Org name="Office">
+				<Person name="wang tong" username="wt" password="wt" roles="Department Manger"/>
+				<Person name="wu baiqi" username="wbq" password="wbq" roles="Archives Manager"/>
+			</Org>
+			<Org name="Price Consult Department"/>
+			<Org name="Financial Department">
+				<Person name="dai pan" username="dp" password="dp" roles="Department Manger"/>
+			</Org>
+			<Org name="Invite Tenders Department"/>
+			<Org name="Software Development Department">
+			    <Person name="ye yuhang" username="yyh" password="yyh" roles="Department Manger"/>
+				<Org name="OA Project Group"/>
+				<Org name="CRM Project Group"/>
+				<Org name="Smokables Project Group">
+					<Person name="wu qian" username="wq" password="wq" roles="Department Manger"/>
+					<Person name="liu xinlei" username="lxl" password="lxl" roles="Common Staff"/>
+					<Person name="gao yuan" username="gy" password="gy" roles="Common Staff"/>
+					<Person name="feng yuqing" username="fyq" password="fyq" roles="Common Staff"/>
+					<Person name="cao jin" username="cj" password="cj" roles="Common Staff"/>
+					<Person name="wu jiajun" username="wjj" password="wjj" roles="Common Staff"/>
+				</Org>
+			</Org>
+			<Org name="Sales Department"/>
+			<Org name="Technical Services Department">
+				<Person name="chen junjie" username="cjj" password="cjj" roles="System manager"/>
+				<Person name="wu tengteng" username="wtt" password="wtt" roles="Common Staff"/>
+				<Person name="feng bin" username="fb" password="fb" roles="Common Staff"/>
+				<Person name="li jiayuan" username="ljy" password="ljy" roles="Common Staff"/>
+				<Person name="wang qiangqiang" username="wqq" password="wqq" roles="Common Staff,System manager"/>
+			</Org>
+		</Org>
+		<Org name="Turku Branch Company">
+			<Org name="Turku Research and Development Center"></Org>
+			<Org name="Sales Department"></Org>
+		</Org>
+		<Org name="Tempere Branch Company">
+			<Org name="Tempere Research and Development Center"></Org>
+		</Org>
+	</Organizations>
+	
+	<FieldInputs>
+		<FieldInput name="Text Field" template="text.ftl"/>
+		<FieldInput name="Check Box" template="checkbox.ftl"/>
+		<FieldInput name="Radio Button" template="radio.ftl"/>
+		<FieldInput name="Combobox" template="select.ftl"/>
+		<FieldInput name="FILE FIELD" template="file.ftl"/>
+	</FieldInputs>
+	<FieldTypes>
+		<FieldType name="String" type="java.lang.String"/>
+		<FieldType name="Integer" type="java.lang.Integer"/>
+		<FieldType name="File" type="java.io.File"/>
+	</FieldTypes>
+</InitDatas>

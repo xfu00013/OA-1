@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class table="t_approveinfo" name="com.oa.model.ApproveInfo">
+    <id access="field" name="id">
+      <generator class="native"/>
+    </id>
+    <property name="comment" access="field"/>
+    <property name="approveTime" access="field"/>
+    <many-to-one access="field" lazy="false" name="document"/>
+    <many-to-one access="field" lazy="false" name="approver"/>
+  </class>
+</hibernate-mapping>

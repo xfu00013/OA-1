@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+    
+	<bean id="orgManager" class="com.oa.manager.impl.OrgManagerImpl">
+	    <property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="personManager" class="com.oa.manager.impl.PersonManagerImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="moduleManager" class="com.oa.manager.impl.ModuleManagerImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="roleManager" class="com.oa.manager.impl.RoleManagerImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="userManager" class="com.oa.manager.impl.UserManagerImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="aclManager" class="com.oa.manager.impl.AclManagerImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="initSystemDatas" class="com.oa.manager.impl.InitSystemDatasImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+		<property name="orgManager" ref="orgManager"></property>
+		<property name="userManager" ref="userManager"></property>
+	</bean>
+	
+	<bean id="securityFunction" class="com.oa.SecurityFunction">
+		<property name="aclManager" ref="aclManager"></property>
+	</bean>
+	
+	<bean id="workflowManager" class="com.oa.manager.impl.WorkflowManagerImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+		<property name="jbpmConfiguration" ref="jbpmConfiguration"/>
+	</bean>
+	
+	<bean id="documentManager" class="com.oa.manager.impl.DocumentManagerImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+		<property name="workflowManager" ref="workflowManager"/>
+	</bean>
+	
+	<bean id="formManager" class="com.oa.manager.impl.FormManagerImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="dynaFormFunction" class="com.oa.DynaFormFunction">
+		<property name="formManager" ref="formManager"/>
+	</bean>
+</beans>
